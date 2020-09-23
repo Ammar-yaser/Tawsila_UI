@@ -1,0 +1,216 @@
+{
+      "pages_list": {
+            "title": "App Pages List"
+      },
+      "chat" : {
+            "name": "Chat Page"
+      },
+      "welcome_page": {
+            "name": "Welcome page",
+            "ft_page": {
+                  "title": "Request Ride",
+                  "subtitle": "Request a ride get picked up by a nearby community driver"
+            },
+            "sd_page": {
+                  "title": "Confirm Your Driver",
+                  "subtitle": "Huge drivers network helps you find comforable, safe and cheap ride"
+            },
+            "th_page": {
+                  "title": "Track your ride",
+                  "subtitle": "know your driver in advance and be able to view current location in real time on the map",
+                  "button": "Get started!"
+            }
+      },
+      "registration": {
+            "name": "Registration",
+            "sign_up": {
+                  "title": "Sign Up",
+                  "num_hint": "Mobile Number",
+                  "facebook": "Connect with Facebook",
+                  "policy_agree": "By clicking start, you agree to our ",
+                  "policy_page": "Terms and Conditions"
+            },
+            "sign_in": {
+                  "title": "Sign In",
+                  "num_hint": "Mobile Number",
+                  "btn_title": "Next"
+            }
+      },
+      "get_start": {
+            "name": "Get Started",
+            "title": "Hi, nice to meet you!",
+            "subtitle": "Choose your location to start find driver around you",
+            "my_location": "Use current location",
+            "custom_location": "Select it manually"
+      },
+      "home": {
+            "name": "Home",
+            "ft_point": "Pickup",
+            "ft_point_loc": "Your Location",
+            "sd_point": "Drop-Off",
+            "fam_locatoins": "Popular locations",
+            "famous": "University of Washington",
+            "drawer": {
+                  "hm_money": "Cash ",
+                  "title_1": "Home",
+                  "title_2": "My Wallet",
+                  "title_3": "History",
+                  "title_4": "Notifications",
+                  "title_5": "Invite Friends",
+                  "title_6": "Settings",
+                  "title_7": "Logout"
+            }
+      },
+      "account": {
+            "title": "My Account",
+            "acc_level": {
+                  "title": "Level",
+                  "level": "Gold Member"
+            },
+            "acc_name": {
+                  "title": "Name",
+                  "name": "Larry Davis"
+            },
+            "acc_email": "Email",
+            "acc_gender": {
+                  "title": "Gender",
+                  "gender": "Male"
+            },
+            "acc_birth": {
+                  "title": "Birthday",
+                  "birth": "April 16, 1988"
+            },
+            "acc_num": "Phone number"
+      },
+      "wallet": {
+            "title": "My Wallet",
+            "card": {
+                  "pay_way": "Cash",
+                  "pay_method": "Default Payment Method",
+                  "money": "Balance",
+                  "expires": "Expires"
+            },
+            "pay_methods": "Payment Methods",
+            "coupon": "Coupon",
+            "integral_mail": "Integral Mail"
+      },
+      "pay_methods": {
+            "title": "Payment Methods",
+            "card": {
+                  "pay_way": "Cash",
+                  "pay_method": "Default Payment Method"
+            },
+            "credit": "Credit Card",
+            "finish_btn": "Done",
+            "new_method_btn": "Add New Method"
+      },
+      "settings": {
+            "title": "Settings",
+            "membership": "Gold Member",
+            "notify": "Notification",
+            "security": "Security",
+            "lang": "Language",
+            "cache": "Clear Cache",
+            "policy": "Terms & Privacy Policy",
+            "us": "Contact us",
+            "logout_btn": "Log out"
+      },
+      "history": {
+            "title": "History",
+            "status": {
+                  "off": "Cancelled",
+                  "on": "Confirm",
+                  "done": "Completed"
+            }
+      },
+      "notification": {
+            "title": "Notifications"
+      },
+      "select_place": {
+            "name": "Select Place",
+            "apply_btn": "Apply"
+      },
+      "select_driver": {
+            "name": "Select Driver",
+            "recommend": "Recommended",
+            "distance": {
+                  "title": "Distance",
+                  "measureing_unit": "km"
+            },
+            "time": {
+                  "title": "Time",
+                  "measureing_unit": "min"
+            },
+            "price_title": "Price",
+            "btn_title": "Confirm"
+      },
+      "customize_details": {
+            "name": "Customize Details",
+            "options": {
+                  "payment": "Payment",
+                  "code": "Promo code",
+                  "options": "Options"
+            },
+            "confirm_btn": "Request"
+      },
+      "select_car": {
+            "name": "Select Car",
+            "cars": {
+                  "near": "Just go",
+                  "limousine": "limousine",
+                  "Luxury" : "Luxury",
+                  "Electric_car": "ElectricCar",
+                  "Bike": "Bike",
+                  "Taxi_4": "Taxi 4 seat",
+                  "Taxi_7": "Taxi 7 seat"
+
+            }
+      },
+      "promocode": {
+            "title": "Promo Code",
+            "field_hint": "Input promo code",
+            "confirm_btn": "Apply"
+      },
+      "trip_preview": {
+            "name": "Trip Preview",
+            "trip_loc": {
+                  "ft_loc": "Your Location"
+            },
+            "distance": {
+                  "title": "Distance",
+                  "measureing_unit": "km"
+            },
+            "time": {
+                  "title": "Time",
+                  "measureing_unit": "min"
+            },
+            "price_title": "Price",
+            "btn_title": "Cancel Request"
+      },
+      "rating": {
+            "title": "Rating",
+            "question": "How is your trip?",
+            "note": "Your feedback will help improve driving experience",
+            "field_hint": "Additional comments...",
+            "confrim_btn": "Submit Review"
+      },
+      "tips": {
+            "title": "Tips",
+            "head": "Wow! A 5 star!",
+            "question": "Wanna add tip for {name}?",
+            "other_amount": "Choose other amount",
+            "confirm_btn": "Done",
+            "cancel_btn": "Maybe next time"
+      },
+      "invite_firends": {
+            "title": "Invite Friends",
+            "head": "Get 3 Coupons each!",
+            "note": "When your friends sign up with your referral code, you'll both get 3.0 coupons",
+            "share_title": "Share Your Invite Code"
+      },
+      "verification": {
+            "title": "Phone Verification",
+            "subtitle": "Enter your OTP code here",
+            "confirm_btn": "Verify Now"
+      }
+}

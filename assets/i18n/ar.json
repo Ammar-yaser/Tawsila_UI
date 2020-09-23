@@ -1,0 +1,216 @@
+{
+      "pages_list": {
+            "title": "قائمة صفحات التطبيق"
+      },
+      "chat" : {
+            "name": "الشات"
+      },
+      "welcome_page": {
+            "name": "صفحة الترحيب",
+            "ft_page": {
+                  "title": "طلب رحلة",
+                  "subtitle": "اطلب رحلة وسيتم توصيلك بأقرب سائق لموقعك"
+            },
+            "sd_page": {
+                  "title": "تأكيد اختيار السائق",
+                  "subtitle": "شبكة ضخمة من السائقين لضمان رحلة آمنة ورخيصة ومريحة"
+            },
+            "th_page": {
+                  "title": "تتبع رحلتك",
+                  "subtitle": "تعرف السائق الخاص بك سابقاً وتكون قادر على تتبع موقعه الحالي على الخريطة",
+                  "button": "ابدأ الطلب!"
+            }
+      },
+      "registration": {
+            "name": "التسجيل",
+            "sign_up": {
+                  "title": "تسجيل",
+                  "num_hint": "رقم الهاتف",
+                  "facebook": "تسجيل بواسطة فيسبوك",
+                  "policy_agree": "بالضغط على ابدأ، فإنك توافق على ",
+                  "policy_page": "الأحكام والشروط"
+            },
+            "sign_in": {
+                  "title": "تسجيل الدخول",
+                  "num_hint": "رقم الهاتف",
+                  "btn_title": "التالي"
+            }
+      },
+      "get_start": {
+            "name": "طلب رحلة",
+            "title": "!مرحبا بك",
+            "subtitle": "اختر موقعك للبحث عن أقرب سائق حولك",
+            "my_location": "استخدم موقعي الحالي",
+            "custom_location": "تحديد الموقع يدوياً"
+      },
+      "home": {
+            "name": "الصفحة الرئيسية",
+            "ft_point": "مكان الالتقاط",
+            "ft_point_loc": "موقعي",
+            "sd_point": "مكان النزول",
+            "fam_locatoins": "أماكن شائعة",
+            "famous": "جامعة واشنطون",
+            "drawer": {
+                  "hm_money": " نقدي",
+                  "title_1": "الصفحة الرئيسية",
+                  "title_2": "محفظتي",
+                  "title_3": "السجل السابق",
+                  "title_4": "الإشعارات",
+                  "title_5": "دعوة الأصدقاء",
+                  "title_6": "الإعدادات",
+                  "title_7": "تسجيل الخروج"
+            }
+      },
+      "account": {
+            "title": "حسابي",
+            "acc_level": {
+                  "title": "العضوية",
+                  "level": "عضوية ذهبية"
+            },
+            "acc_name": {
+                  "title": "الاسم",
+                  "name": "Larry Davis"
+            },
+            "acc_email": "البريد الإلكتروني",
+            "acc_gender": {
+                  "title": "الجنس",
+                  "gender": "ذكر"
+            },
+            "acc_birth": {
+                  "title": "تاريخ الميلاد",
+                  "birth": "April 16, 1988"
+            },
+            "acc_num": "رقم الهاتف"
+      },
+      "wallet": {
+            "title": "محفظتي",
+            "card": {
+                  "pay_way": "نقدي",
+                  "pay_method": "طريقة دفع افتراضية",
+                  "money": "الرصيد",
+                  "expires": "انتهاء الصلاحية"
+            },
+            "pay_methods": "طرق الدفع",
+            "coupon": "كوبون",
+            "integral_mail": "بريد الكتروني متكامل"
+      },
+      "pay_methods": {
+            "title": "طرق الدفع",
+            "card": {
+                  "pay_way": "نقدي",
+                  "pay_method": "طريقة دفع افتراضية"
+            },
+            "credit": "بطاقات الائتمان",
+            "finish_btn": "تم",
+            "new_method_btn": "إضافة طريقة جديدة"
+      },
+      "settings": {
+            "title": "الإعدادات",
+            "membership": "عضوية ذهبية",
+            "notify": "الإشعارات",
+            "security": "الأمان",
+            "lang": "اللغة",
+            "cache": "مسح التخزين المؤقت",
+            "policy": "الشروط وسياسة الخصوصية",
+            "us": "تواصل معنا",
+            "logout_btn": "تسجيل خروج"
+      },
+      "history": {
+            "title": "السجل السابق",
+            "status": {
+                  "off":"أُلغيت",
+                  "on": "تأكيد",
+                  "done": "تمت"
+            }
+      },
+      "notification": {
+            "title": "الإشعارات"
+      },
+      "select_place": {
+            "name": "اختيار مكان",
+            "apply_btn": "طلب"
+      },
+      "select_driver": {
+            "name": "اختيار السائق",
+            "recommend": "موصى به",
+            "distance": {
+                  "title": "المسافة",
+                  "measureing_unit": "كم"
+            },
+            "time": {
+                  "title": "الوقت",
+                  "measureing_unit": "دقيقة"
+            },
+            "price_title": "السعر",
+            "btn_title": "تأكيد"
+      },
+      "customize_details": {
+            "name": "اختيار التفاصيل",
+            "options": {
+                  "payment":"الدفع",
+                  "code": "بروموكود",
+                  "options": "خيارات"
+            },
+            "confirm_btn": "طلب"
+      },
+      "select_car": {
+            "name": "اختيار السيارة",
+            "cars": {
+                  "near": "اذهب الان",
+                  "limousine": "ليموزين",
+                  "Luxury" : "سيارة فخمة",
+                  "Electric_car": "سيارة كهربائية",
+                  "Bike": "دراجة",
+                  "Taxi_4": "تاكسي 4 كراسي",
+                  "Taxi_7": "تاكسي 7 كراسي"
+
+            }
+      },
+      "promocode": {
+            "title": "بروموكود",
+            "field_hint": "أدخل البروموكود",
+            "confirm_btn": "تفعيل"
+      },
+      "trip_preview": {
+            "name": "مراجعة الرحلة",
+            "trip_loc": {
+                  "ft_loc": "موقعك"
+            },
+            "distance": {
+                  "title": "المسافة",
+                  "measureing_unit": "كم"
+            },
+            "time": {
+                  "title": "الوقت",
+                  "measureing_unit": "دقيقة"
+            },
+            "price_title": "السعر",
+            "btn_title": "إلغاء الطلب"
+      },
+      "rating": {
+            "title": "التقييم",
+            "question": "كيف كانت رحلتك؟",
+            "note": "تقييمك يساعدنا في تحسين تجربة التوصيل",
+            "field_hint": "تعليقات إضافية",
+            "confrim_btn": "إرسال التقييم"
+      },
+      "tips": {
+            "title": "بقشيش",
+            "head": "Wow! A 5 star!",
+            "question": "{name} تريد إضافة بقشيش لـ?",
+            "other_amount": "اختيار قيمة أخرى",
+            "confirm_btn": "إرسال",
+            "cancel_btn": "المرة القادمة"
+      },
+      "invite_firends": {
+            "title": "دعوة الأصدقاء",
+            "head": "احصل على 3 كوبونات",
+            "note": "عند اشتراك أصدقائك بالكود الخاص بك سوف تحصل على ثلاث كوبونات",
+            "share_title": "مشاركة كود الدعوة"
+      },
+      "verification": {
+            "title": "التحقق من رقم الهاتف",
+            "subtitle": "أدخل الرمز الخاص بك هنا",
+            "confirm_btn": "تحقق الآن"
+      }
+}
