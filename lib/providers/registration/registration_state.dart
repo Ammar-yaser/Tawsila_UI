@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-class RegistUIState with ChangeNotifier {
+class RegistrationState with ChangeNotifier {
   int _selectedForm = 0;
 
   set selectedForm(int val) {

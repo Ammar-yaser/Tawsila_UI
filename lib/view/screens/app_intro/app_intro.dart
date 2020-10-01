@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:provider/provider.dart';
 import '../../../providers/ui_state/intro_state.dart';
-import 'intro_screens/FirstPage.dart';
-import 'intro_screens/SecondPage.dart';
-import 'intro_screens/ThirdPage.dart';
+import 'app_intro_screens.dart';
+
 
 class AppIntro extends StatelessWidget {
   @override

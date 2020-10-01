@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:uber_concept/localization/keys.dart';
 import 'package:provider/provider.dart';
-import 'package:uber_concept/view/screens/GetStarted.dart';
 import '../../../../providers/registration/Signup_state.dart';
 import '../../../../utilities/validators/FormsValidation.dart';
 import '../../../widgets/phoneNumber.dart';
@@ -84,7 +83,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 ),
               ],
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 15),
             Container(
               width: double.infinity,
               child: RaisedButton(
@@ -112,7 +111,6 @@ class _SignUpFormState extends State<SignUpForm> {
                 },
               ),
             ),
-            SizedBox(height: 20),
           ],
         ),
       ),

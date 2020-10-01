@@ -4,18 +4,14 @@ import 'package:provider/provider.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:uber_concept/localization/keys.dart';
 import 'package:uber_concept/providers/make_request/PanelContollers.dart';
+import 'package:uber_concept/view/screens/trip_options/global_sections/transportation_details.dart';
 
-import 'SelectCar.dart';
-
-class RequestOptions extends StatefulWidget {
-  final bool car;
-
-  const RequestOptions({Key key, this.car = false}) : super(key: key);
+class TripOptionsPanel extends StatefulWidget {
   @override
-  _RequestOptionsState createState() => _RequestOptionsState();
+  _TripOptionsPanelState createState() => _TripOptionsPanelState();
 }
 
-class _RequestOptionsState extends State<RequestOptions> {
+class _TripOptionsPanelState extends State<TripOptionsPanel> {
   PanelController reqOptController;
   @override
   void initState() {
@@ -34,7 +30,6 @@ class _RequestOptionsState extends State<RequestOptions> {
   @override
   Widget build(BuildContext context) {
     Size query = MediaQuery.of(context).size;
-    ThemeData theme = Theme.of(context);
     PanelControllers panelControllers =
         Provider.of<PanelControllers>(context, listen: false);
     return SlidingUpPanel(
@@ -66,9 +61,10 @@ class _RequestOptionsState extends State<RequestOptions> {
                   ),
                 ),
               ),
+              // Select Transportation
               Flexible(
                 flex: 1,
-                child: CarDetails(
+                child: TransportationDetails(
                   name: translate(Keys.select_car_cars_near),
                   time: 2,
                   price: 25.00,
@@ -80,44 +76,50 @@ class _RequestOptionsState extends State<RequestOptions> {
                   },
                 ),
               ),
-              Expanded(
-                flex: 2,
-                child: Container(
-                  color: Colors.white,
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 12, horizontal: 15),
-                  child: Column(
-                    children: <Widget>[
-                      Flexible(
-                        flex: 2,
-                        child: CustomizeOptions(),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        child: Container(
-                          width: query.width,
-                          child: RaisedButton(
-                            child: Text(
-                              translate(Keys.customize_details_confirm_btn),
-                            ),
-                            color: theme.primaryColor,
-                            textColor: Colors.white,
-                            padding: const EdgeInsets.symmetric(horizontal: 12),
-                            onPressed: () {
-                              reqOptController.close();
-                              panelControllers.driverAnimateController
-                                  .forward();
-                            },
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              )
+              Expanded(flex: 2, child: Options())
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class Options extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    ThemeData theme = Theme.of(context);
+    Size query = MediaQuery.of(context).size;
+    PanelControllers panelControllers =
+        Provider.of<PanelControllers>(context, listen: false);
+    return Container(
+      color: Colors.white,
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 15),
+      child: Column(
+        children: <Widget>[
+          Flexible(
+            flex: 2,
+            child: CustomizeOptions(),
+          ),
+          Flexible(
+            flex: 1,
+            child: Container(
+              width: query.width,
+              child: RaisedButton(
+                child: Text(
+                  translate(Keys.customize_details_confirm_btn),
+                ),
+                color: theme.primaryColor,
+                textColor: Colors.white,
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                onPressed: () {
+                  panelControllers.reqOptcontroller.close();
+                  panelControllers.driverAnimateController.forward();
+                },
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:provider/provider.dart';
-import 'package:uber_concept/view/screens/GetStarted.dart';
 import 'package:uber_concept/view/widgets/phoneNumber.dart';
 import 'package:uber_concept/localization/keys.dart';
 import '../../../../providers/registration/Login_state.dart';
 import '../../../../utilities/validators/FormsValidation.dart';
+import 'package:uber_concept/global_exports.dart';
 
 class SignInForm extends StatefulWidget {
   @override
@@ -60,7 +60,7 @@ class _SignInFormState extends State<SignInForm> {
                 
               ],
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 10),
             Container(
               width: double.infinity,
               child: RaisedButton(
@@ -85,7 +85,6 @@ class _SignInFormState extends State<SignInForm> {
                 },
               ),
             ),
-            SizedBox(height: 20),
           ],
         ),
       ),

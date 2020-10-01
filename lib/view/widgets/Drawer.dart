@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
-
-import 'package:uber_concept/view/screens/History.dart';
-import 'package:uber_concept/view/screens/Home/Home.dart';
-import 'package:uber_concept/view/screens/InviteFriends.dart';
-import 'package:uber_concept/view/screens/Notifications.dart';
-import 'package:uber_concept/view/screens/Settings.dart';
-import 'package:uber_concept/view/screens/Wallet.dart';
 import 'package:uber_concept/localization/keys.dart';
+import 'package:uber_concept/global_exports.dart';
 
 class GlobalDrawer extends StatelessWidget {
   @override

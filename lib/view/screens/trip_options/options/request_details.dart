@@ -6,12 +6,11 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:provider/provider.dart';
 import 'package:uber_concept/providers/make_request/PanelContollers.dart';
-import 'RequestPreview.dart';
-
-import 'PromocodePanel.dart';
-import 'RequestOptions.dart';
-import 'SelectCar.dart';
-import 'SelectDriver.dart';
+import 'package:uber_concept/view/screens/trip_options/transportation/select_transportation.dart';
+import '../../../../global_exports.dart';
+import '../RequestPreview.dart';
+import '../promocode.dart';
+import '../select_driver.dart';
 
 class MakeRequest extends StatelessWidget {
   final Widget child;
@@ -54,14 +53,14 @@ class MakeRequest extends StatelessWidget {
                 bottom: 0,
                 left: 0,
                 right: 0,
-                child: AnimateDriverPanel(),
+                child: DriversPanelAnimation(),
               ),
               AnimatedPositioned(
                 duration: Duration(seconds: 1),
                 bottom: 0,
                 left: 0,
                 right: 0,
-                child: AnimateReqPreview(),
+                child: TripPreviewAnimation(),
               ),
               // Positioned(
               //   bottom: 0,
@@ -74,8 +73,8 @@ class MakeRequest extends StatelessWidget {
               //   ),
               // ),
               // child ?? Container(),
-              RequestOptions(),
-              SelectCar(),
+              TripOptionsPanel(),
+              SelectTransportation(),
               PromocodePanel(),
             ],
           ),
@@ -85,12 +84,12 @@ class MakeRequest extends StatelessWidget {
   }
 }
 
-class AnimateDriverPanel extends StatefulWidget {
+class DriversPanelAnimation extends StatefulWidget {
   @override
-  _AnimateDriverPanelState createState() => _AnimateDriverPanelState();
+  _DriversPanelAnimationState createState() => _DriversPanelAnimationState();
 }
 
-class _AnimateDriverPanelState extends State<AnimateDriverPanel>
+class _DriversPanelAnimationState extends State<DriversPanelAnimation>
     with SingleTickerProviderStateMixin {
   Animation animation;
   AnimationController controller;
@@ -130,12 +129,12 @@ class _AnimateDriverPanelState extends State<AnimateDriverPanel>
   }
 }
 
-class AnimateReqPreview extends StatefulWidget {
+class TripPreviewAnimation extends StatefulWidget {
   @override
-  _AnimateReqPreviewState createState() => _AnimateReqPreviewState();
+  _TripPreviewAnimationState createState() => _TripPreviewAnimationState();
 }
 
-class _AnimateReqPreviewState extends State<AnimateReqPreview>
+class _TripPreviewAnimationState extends State<TripPreviewAnimation>
     with SingleTickerProviderStateMixin {
   Animation animation;
   AnimationController controller;

@@ -90,17 +90,15 @@ class PinCodeFields extends StatelessWidget {
       textInputType: TextInputType.number,
       animationType: AnimationType.fade,
       pinTheme: PinTheme(
-          shape: PinCodeFieldShape.underline,
-          borderRadius: BorderRadius.circular(5),
-          fieldHeight: 50,
-          fieldWidth: 40,
-          activeFillColor: Colors.white,
-          inactiveColor: Colors.grey),
+        shape: PinCodeFieldShape.underline,
+        borderRadius: BorderRadius.circular(5),
+        fieldHeight: 50,
+        fieldWidth: 40,
+        activeFillColor: Colors.white,
+        inactiveColor: Colors.grey,
+      ),
       animationDuration: Duration(milliseconds: 300),
       backgroundColor: Colors.transparent,
-      // enableActiveFill: true,
-      // errorAnimationController: errorController,
-      // controller: textEditingController,
       onCompleted: (v) {
         print("Completed");
       },
@@ -109,8 +107,6 @@ class PinCodeFields extends StatelessWidget {
       },
       beforeTextPaste: (text) {
         print("Allowing to paste $text");
-        //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
-        //but you can show anything you want here, like your pop up saying wrong paste format or etc
         return true;
       },
     );

@@ -5,7 +5,13 @@ class IntroTemp extends StatelessWidget {
   final Widget image, startButton;
   final String title, subtitle;
 
-  const IntroTemp({this.widthFactor, this.image, this.title, this.subtitle, this.startButton});
+  const IntroTemp({
+    this.widthFactor,
+    this.image,
+    this.title,
+    this.subtitle,
+    this.startButton,
+  });
 
   @override
   Widget build(BuildContext context) {

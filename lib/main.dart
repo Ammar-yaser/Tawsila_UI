@@ -5,31 +5,11 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:uber_concept/providers/registration/Login_state.dart';
-import 'view/screens/app_intro/AppIntro.dart';
 import 'view/widgets/ArrowIcon.dart';
 import 'providers/registration/Signup_state.dart';
 import 'utilities/validators/FormsValidation.dart';
 import 'localization/keys.dart';
-import 'view/screens/account/account.dart';
-import 'package:uber_concept/view/screens/GetStarted.dart';
-import 'package:uber_concept/view/screens/History.dart';
-import 'package:uber_concept/view/screens/InviteFriends.dart';
-import 'package:uber_concept/view/screens/make_request/MakeRequest.dart';
-import 'package:uber_concept/view/screens/Notifications.dart';
-import 'package:uber_concept/view/screens/Payment.dart';
-import 'package:uber_concept/view/screens/Settings.dart';
-import 'package:uber_concept/view/screens/VerifyPhone.dart';
-import 'package:uber_concept/view/screens/Wallet.dart';
-import 'view/screens/chat/chat.dart';
-import 'view/screens/make_request/PromocodePanel.dart';
-import 'view/screens/make_request/RequestOptions.dart';
-import 'view/screens/make_request/RequestPreview.dart';
-import 'view/screens/make_request/SelectDriver.dart';
-import 'view/screens/Rating.dart';
-import 'view/screens/registration/Registration.dart';
-import 'view/screens/Tips.dart';
-import 'view/screens/Home/Home.dart';
-import 'view/screens/SelectPlace.dart';
+import 'global_exports.dart';
 
 void main() async {
   LocalizationDelegate delegate = await LocalizationDelegate.create(
@@ -60,7 +40,6 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider<LoginState>(
             create: (_) => LoginState(),
           ),
-          
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -82,9 +61,8 @@ class MyApp extends StatelessWidget {
               ),
             ),
             hintColor: Colors.grey[300],
-            textTheme: TextTheme().copyWith(
-              headline5: TextStyle(fontWeight: FontWeight.w700)
-            ),
+            textTheme: TextTheme()
+                .copyWith(headline5: TextStyle(fontWeight: FontWeight.w700)),
             dividerColor: Colors.green[200],
             accentColor: Colors.green,
             disabledColor: Colors.red,
@@ -94,7 +72,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ),
-          home: PagesList(), //MakeRequest(),
+          home: MakeRequest(),
         ),
       ),
     );
@@ -115,10 +93,8 @@ class PagesList extends StatelessWidget {
     translate(Keys.notification_title): Notifications(),
     translate(Keys.select_place_name): SelectPlace(),
     translate(Keys.select_driver_name): MakeRequest(position: SelectDriver()),
-    translate(Keys.customize_details_name):
-        MakeRequest(child: RequestOptions()),
-    translate(Keys.select_car_name):
-        MakeRequest(child: RequestOptions(car: true)),
+    translate(Keys.customize_details_name): MakeRequest(),
+    translate(Keys.select_car_name): MakeRequest(),
     translate(Keys.promocode_title): MakeRequest(child: PromocodePanel()),
     translate(Keys.trip_preview_name): MakeRequest(position: RequestPreview()),
     translate(Keys.chat_name): Chat(),

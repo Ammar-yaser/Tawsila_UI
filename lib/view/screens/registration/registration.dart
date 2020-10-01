@@ -6,31 +6,64 @@ import 'package:uber_concept/localization/keys.dart';
 
 // providers
 import 'package:provider/provider.dart';
-import '../../../providers/ui_state/regist_ui_state.dart';
+import '../../../providers/registration/registration_state.dart';
 
 // pages and widgets
-import 'FormsHeadlines.dart';
-import 'SelectedForm.dart';
+import 'forms/select_form.dart';
 
 class Registration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<RegistUIState>(
-      create: (_) => RegistUIState(),
+    Size size = MediaQuery.of(context).size;
+    return ChangeNotifierProvider<RegistrationState>(
+      create: (_) => RegistrationState(),
       child: Scaffold(
         body: SingleChildScrollView(
-          child: Container(
-            child: Column(
-              children: <Widget>[
-                FormsHeadlines(),
-                Container(
-                  width: MediaQuery.of(context).size.width - 50,
-                  alignment: Alignment.center,
+          child: Stack(
+            children: [
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 250,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height - 250,
+                    ),
+                  ],
+                ),
+              ),
+              Positioned(
+                top: 187,
+                left: 0,
+                right: 0,
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
-                    children: <Widget>[
-                      SelectedForm(),
+                    children: [
+                      Container(
+                        width: size.width,
+                        alignment: Alignment.center,
+                        child: Card(
+                          margin: EdgeInsets.zero,
+                          child: Container(
+                            width: size.width - 50,
+                            padding: const EdgeInsets.only(
+                              top: 20,
+                              bottom: 30,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: SelectForm(),
+                          ),
+                        ),
+                      ),
                       SizedBox(height: 20),
-                      Consumer<RegistUIState>(
+                      Consumer<RegistrationState>(
                         builder: (_, formState, __) {
                           return AnimatedSwitcher(
                             duration: Duration(milliseconds: 300),
@@ -45,8 +78,8 @@ class Registration extends StatelessWidget {
                     ],
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

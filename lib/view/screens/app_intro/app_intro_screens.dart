@@ -1,9 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/global.dart';
-import 'package:uber_concept/view/screens/Registration/Registration.dart';
 import 'package:uber_concept/localization/keys.dart';
+import 'package:uber_concept/view/screens/registration/Registration.dart';
+import 'intro_screens_temp.dart';
 
-import '../../../widgets/templates/Intro_temp.dart';
+class FirstPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return IntroTemp(
+      widthFactor: 1.25,
+      image: Image.asset('assets/images/headImage.jpg'),
+      title: translate(Keys.welcome_page_ft_page_title),
+      subtitle: translate(Keys.welcome_page_ft_page_subtitle),
+    );
+  }
+}
+
+class SecondPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return IntroTemp(
+      widthFactor: 1.42,
+      image: Image.asset('assets/images/headImage.jpg'),
+      title: translate(Keys.welcome_page_sd_page_title),
+      subtitle: translate(Keys.welcome_page_sd_page_subtitle),
+    );
+  }
+}
 
 class ThirdPage extends StatelessWidget {
   @override

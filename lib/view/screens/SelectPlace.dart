@@ -3,7 +3,7 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:uber_concept/localization/keys.dart';
 
-import 'make_request/MakeRequest.dart';
+import 'package:uber_concept/global_exports.dart';
 
 class SelectPlace extends StatelessWidget {
   @override
@@ -19,7 +19,7 @@ class SelectPlace extends StatelessWidget {
               child: Container(
                 child: Stack(
                   children: <Widget>[
-                    GoogleMapWidget(),
+                    SelectPlaceMap(),
                     SafeArea(child: PlaceSearcher()),
                     Positioned(
                       bottom: 10,
@@ -108,12 +108,12 @@ class _PlaceSearcherState extends State<PlaceSearcher> {
   }
 }
 
-class GoogleMapWidget extends StatefulWidget {
+class SelectPlaceMap extends StatefulWidget {
   @override
-  _GoogleMapWidgetState createState() => _GoogleMapWidgetState();
+  _SelectPlaceMapState createState() => _SelectPlaceMapState();
 }
 
-class _GoogleMapWidgetState extends State<GoogleMapWidget> {
+class _SelectPlaceMapState extends State<SelectPlaceMap> {
   // Completer<GoogleMapController> _controller;
 
   @override
