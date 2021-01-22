@@ -4,4 +4,6 @@ what I use in this app.
 - google map
 - provider
 - animation
+- localization (en , ar)
+
 
